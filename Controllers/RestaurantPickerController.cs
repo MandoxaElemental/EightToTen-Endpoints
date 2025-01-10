@@ -12,14 +12,17 @@ namespace EightToTen_Endpoints.Controllers
     public class RestaurantPicker : ControllerBase
     {
         private readonly RestaurantPickerServices _restaurantPickerServices;
-        public RestaurantPicker(RestaurantPickerServices restaurantPickerServices){
+        public RestaurantPicker(RestaurantPickerServices restaurantPickerServices)
+        {
             _restaurantPickerServices = restaurantPickerServices;
         }
         [HttpPost]
         [Route("yourFood/{yourChoice}")]
-        public List<string> yourFood(string yourChoice){
+        public List<string> yourFood(string yourChoice)
+        {
             return _restaurantPickerServices.yourFood(yourChoice);
         }
 
     }
+    
 }
