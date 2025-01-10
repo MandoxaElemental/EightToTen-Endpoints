@@ -20,17 +20,19 @@ namespace EightToTen_Endpoints.Controllers
             _guessItHardServices = guessItHardServices;
         }
         [HttpPost]
-        [Route("guessIt/{yourInput}")]
+        [Route("guessItEasy/{yourInput}")]
         public List<string> YourAnswerEasy(string yourInput){
             return _guessItEasyServices.YourAnswerEasy(yourInput);
         }
+
         [HttpPost]
-        [Route("guessIt/{yourInput}")]
+        [Route("guessItMedium/{yourInput}")]
         public List<string> YourAnswerMedium(string yourInput){
             return _guessItMediumServices.YourAnswerMedium(yourInput);
         }
+
         [HttpPost]
-        [Route("guessIt/{yourInput}")]
+        [Route("guessItHard/{yourInput}")]
         public List<string> YourAnswerHard(string yourInput){
             return _guessItHardServices.YourAnswerHard(yourInput);
         }
