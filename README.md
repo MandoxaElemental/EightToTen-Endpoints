@@ -32,5 +32,5 @@
 ### EightToTen - Endpoints_GitHub Repository Link:
 [EightToTen - Endpoints GitHub Repository Link](https://github.com/MandoxaElemental/EightToTen-Endpoints)
 
-This has been Peer Reviewed By: 
-> Comments: 
+This has been Peer Reviewed By: Aaron Robinson
+> Comments: I wasnt able to do a dotnet watch run command as my dotnet version is a newer version but taking a look over the code it seems that everything will work as intended. I like his organization and te naming conventions made the flow easy to understand great job!
